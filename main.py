@@ -15,7 +15,7 @@ app = FastAPI(
 
 
 @app.get("/")
-async def root(username: Optional[str] = Header(None), password: Optional[str] = Header(None), status_code: int = 200):
+async def root(username: Optional[str] = Header(None), password: Optional[str] = Header(None)):
     # Execute the query on the transport
     if username is None or password is None:
         raise HTTPException(
@@ -92,7 +92,7 @@ async def root(username: Optional[str] = Header(None), password: Optional[str] =
 
 
 @app.get("/signup")
-async def signup(username: Optional[str] = Header(None), password: Optional[str] = Header(None), status_code: int = 200):
+async def signup(username: Optional[str] = Header(None), password: Optional[str] = Header(None)):
     # Execute the query on the transport
     if username is None or password is None:
         raise HTTPException(
@@ -153,5 +153,5 @@ async def signup(username: Optional[str] = Header(None), password: Optional[str]
         result = await client.execute_async(auth_query, variable_values={"username": username, "password": password})
     except TransportQueryError:
         return HTTPException(status_code=400, detail="Username already exists")
-        
+
     return result
