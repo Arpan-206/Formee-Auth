@@ -25,7 +25,7 @@ multidict==6.0.2
 orjson==3.6.7
 pycodestyle==2.8.0
 pydantic==1.9.0
-PyJWT==2.3.0
+PyJWT==2.4.0
 python-dotenv==0.19.2
 python-multipart==0.0.5
 PyYAML==5.4.1
