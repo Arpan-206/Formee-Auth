@@ -27,7 +27,7 @@ pycodestyle==2.8.0
 pydantic==1.9.0
 PyJWT==2.4.0
 python-dotenv==0.19.2
-python-multipart==0.0.5
+python-multipart==0.0.7
 PyYAML==5.4.1
 requests==2.27.1
 six==1.16.0
