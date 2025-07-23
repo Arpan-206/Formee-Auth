@@ -1,4 +1,4 @@
-aiohttp==3.8.1
+aiohttp==3.12.14
 aiosignal==1.2.0
 anyio==3.5.0
 asgiref==3.5.0
@@ -32,7 +32,7 @@ PyYAML==5.4.1
 requests==2.27.1
 six==1.16.0
 sniffio==1.2.0
-starlette==0.17.1
+starlette==0.47.2
 toml==0.10.2
 typing_extensions==4.1.1
 ujson==5.4.0
